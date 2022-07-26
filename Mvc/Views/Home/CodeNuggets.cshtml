@@ -1,0 +1,11 @@
+﻿@model Product
+
+@{
+    ViewBag.Title = "Code Nuggets";
+}
+
+<h1>@ViewBag.Title</h1>
+<pre>
+    &lt;img src=&quot;/media/products/guitars/@@(Model.Id).jpg&quot; /&gt;
+</pre>
+<img src="/media/products/guitars/@(Model.Id).jpg" />

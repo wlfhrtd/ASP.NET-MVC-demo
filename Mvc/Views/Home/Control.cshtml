@@ -1,0 +1,60 @@
+﻿@model Guitar
+
+@{
+    ViewBag.Title = "Control Statements";
+}
+
+<h2>@ViewBag.Title</h2>
+<h3>if statements</h3>
+<pre>
+@@if (Model.HasWhammyBar)
+{
+    &lt;span&gt;@@Model.Brand @@Model.Model has @@Model.WhammyBarType whammy bar&lt;/span&gt;
+}
+else
+{
+    &lt;span&gt;No whammy bar on this guitar&lt;/span&gt;
+}
+</pre>
+@if (Model.HasWhammyBar)
+{
+    <span>@Model.Brand @Model.Model has @Model.WhammyBarType whammy bar</span>
+}
+else
+{
+    <span>No whammy bar on this guitar</span>
+}
+
+<h3>Switch statement</h3>
+<pre>
+@@switch (Model.Brand.ToLower())
+{
+    case "gibson":
+        &lt;span&gt;Slash loves Gibson Les Paul&lt;/span&gt;
+        break;
+    case "fender":
+        &lt;span&gt;Steve Ray Vaughan loved his Fender Stratocaster&lt;/span&gt;
+        break;
+    case "charvel":
+        &lt;span&gt;Warren DeMartini shreds on Charvel San Dimas&lt;/span&gt;
+        break;
+    default:
+        &lt;span&gt;Unmatched Brand&lt;/span&gt;
+        break;
+}
+</pre>
+@switch (Model.Brand.ToLower())
+{
+    case "gibson":
+        <span>Slash loves Gibson Les Paul</span>
+        break;
+    case "fender":
+        <span>Steve Ray Vaughan loved his Fender Stratocaster</span>
+        break;
+    case "charvel":
+        <span>Warren DeMartini shreds on Charvel San Dimas</span>
+        break;
+    default:
+        <span>Unmatched Brand</span>;
+        break;
+}

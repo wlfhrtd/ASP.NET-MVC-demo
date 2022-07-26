@@ -1,0 +1,51 @@
+﻿<h1>Commentaries</h1>
+Only Razor and C# comments are not sent to client.
+<h2>Razor</h2>
+@*Comment example*@
+<pre>
+@@* Comment example *@@
+</pre>
+
+<h2>HTML</h2>
+HTML comments got sent to client, are not visible on page but visible in source view.
+<!-- this is an HTML comment. It will be sent to the client browser but is hidden on the page.-->
+Same for js comments
+<script>
+    // js comment
+</script>
+and for css comments
+<style>
+    /*css comment*/
+</style>
+
+<pre>
+    &lt;!-- this is an HTML comment. It will be sent to the client browser but is hidden on the page.--&gt;
+
+    &lt;script&gt;
+        // this is a JavaScript comment
+    &lt;/script&gt;
+
+    &lt;style&gt;
+        /* This is a CSS Comment*/
+    &lt;/style&gt;
+
+</pre>
+
+<h2>C# comments</h2>
+C# comments in C# code blocks are not sent and are not visible as code blocks themselves
+@{
+    // this is a comment inside of a code block
+
+    /*
+    * multiline one
+    */
+}
+<pre>
+@@{ 
+    // this is a comment inside of a code block
+
+    /*
+     * multiline one
+     */
+}
+</pre>

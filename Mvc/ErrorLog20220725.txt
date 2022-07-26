@@ -1,0 +1,120 @@
+[22-07-25 20:20:15 Information]:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\slrnd\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[22-07-25 20:20:15 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "https://localhost:5001"
+
+[22-07-25 20:20:15 Information]:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[22-07-25 20:20:15 Information]:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[22-07-25 20:20:15 Information]:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[22-07-25 20:20:15 Information]:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\dev\cs\RAZOR demo\Mvc"
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/ - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"Mvc.Controllers.HomeController.Index (Mvc)"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Mvc.Controllers.HomeController" ("Mvc").
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Index".
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Index" executed in 137.9135ms.
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "Mvc.Controllers.HomeController.Index (Mvc)" in 164.6585ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"Mvc.Controllers.HomeController.Index (Mvc)"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 234.7392ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\css\site.css"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\js\site.js"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 200 1417 text/css 15.3697ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 5.8069ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\lib\jquery\dist\jquery.min.js"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 28.3969ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 29.9424ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 34.1792ms
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\cs\RAZOR demo\Mvc\wwwroot\favicon.ico"'
+
+[22-07-25 20:20:17 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 200 5430 image/x-icon 1.9809ms
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/2 GET https://localhost:5001/Home/Variables - -
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"Mvc.Controllers.HomeController.Variables (Mvc)"'
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Variables\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Variables()" on controller "Mvc.Controllers.HomeController" ("Mvc").
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executing ViewResult, running view "Variables".
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+Message:Executed ViewResult - view "Variables" executed in 52.1537ms.
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "Mvc.Controllers.HomeController.Variables (Mvc)" in 57.827ms
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"Mvc.Controllers.HomeController.Variables (Mvc)"'
+
+[22-07-25 20:20:36 Information]:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished HTTP/2 GET https://localhost:5001/Home/Variables - - - 200 - text/html;+charset=utf-8 66.6366ms
+

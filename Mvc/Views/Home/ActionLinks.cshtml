@@ -1,0 +1,21 @@
+﻿<h2>Action links with tag helpers</h2>
+
+Omit 'asp-controller=""' if link to same controller
+<br />
+<a asp-action="Index">Link to index of same controller</a>
+<br />
+<a asp-action="Somewhere" asp-controller="Away">Action link to another controller</a>
+<br />
+
+<h3>Passing route params</h3>
+<a asp-action="Somewhere" asp-controller="Away" asp-route-id="12">Pass asp-route-id=12</a>
+
+<a asp-action="ListOrGrid" asp-controller="Data" asp-route-page="2" asp-route-sort="foo">
+    Pass asp-route-page=2 and asp-route-sort=foo
+</a>
+
+<h3>Link to area</h3>
+<a asp-action="ActionInAreaController" asp-controller="ControllerInArea" asp-area="FarAway">Link to area</a>
+
+<h3>Link to fragment</h3>
+<a asp-action="Profile" asp-controller="Admin" asp-fragment="Email">Link to fragment</a>

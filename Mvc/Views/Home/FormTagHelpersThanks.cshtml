@@ -1,0 +1,12 @@
+﻿@model AdvancedContact
+
+<h2>Thanks @Model.Name for submit</h2>
+
+@section Scripts{ 
+   <script>
+       (function () {
+           let color = "@Model.FavoriteColor";
+           $("body").css("background-color", color);
+       })();
+   </script>
+}

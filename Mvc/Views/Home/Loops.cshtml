@@ -1,0 +1,49 @@
+﻿@model List<Guitar>
+
+@{
+    ViewBag.Title = "Loops";
+}
+
+<h2>Loops</h2>
+<h3>foreach</h3>
+<pre>
+&lt;table class=&quot;table table-striped&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Brand&lt;/th&gt;
+            &lt;th&gt;Model&lt;/th&gt;
+            &lt;th&gt;Has Whammy Bar&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        @@foreach (var item in Model)
+        {
+            &lt;tr&gt;
+                &lt;td&gt;@@item.Model&lt;/td&gt;
+                &lt;td&gt;@@item.Model&lt;/td&gt;
+                &lt;td&gt;@@item.HasWhammyBar&lt;/td&gt;
+            &lt;/tr&gt;
+        }
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Has Whammy Bar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Guitar guitar in Model)
+        {
+            <tr>
+                <td>@guitar.Brand</td>
+                <td>@guitar.Model</td>
+                <td>@guitar.HasWhammyBar</td>
+            </tr>
+        }
+    </tbody>
+</table>

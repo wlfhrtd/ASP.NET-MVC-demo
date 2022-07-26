@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Html
+
+@functions
+{
+    IHtmlContent Warning(string message)
+    {
+        return Html.Raw(string.Format(@"<p class =""alert alert-warning"">{0}</p>", message));
+    }
+}
+
+@Html.Label("", "Enter text")
+@Warning("Warning text")
+@Html.TextArea("Text", new { @class = "form-control" })
+
+<br />
+
+@Html.Label("", "Another text")
+@Warning("Another warning")
+@Html.TextArea("AnotherText", new { @class = "form-control" })

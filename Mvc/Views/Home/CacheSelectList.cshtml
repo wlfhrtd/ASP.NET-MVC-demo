@@ -1,0 +1,17 @@
+﻿@model FormWithCacheViewModel
+
+<h2>Select options list cache</h2>
+
+Selected value: @Model.MyListIsCached
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="MyListIsCached"></label>
+        <select asp-for="MyListIsCached" class="form-control">
+            <cache>
+                @await Component.InvokeAsync("LookupList")
+            </cache>
+        </select>
+    </div>
+    <input type="submit" value="Save" class="btn btn-primary" />
+</form>

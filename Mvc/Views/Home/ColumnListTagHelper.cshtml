@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Column list tag helper";
+}
+
+<h2>Column list tag helper</h2>
+<pre>
+&lt;column-list asp-number-of-columns="3"
+             asp-for="@@Model"
+             asp-view-component="ArtistCard"&gt;&lt;/column-list&gt;
+</pre>
+
+<column-list asp-number-of-columns="3"
+             asp-for="@Model"
+             asp-view-component="ArtistCard"></column-list>

@@ -1,0 +1,42 @@
+﻿@model Guitar
+
+@{
+    ViewBag.Title = "Variables";
+}
+
+<h2>Variables</h2>
+<h3>Print var</h3>
+<pre>&lt;span&gt;It is @@DateTime.Now now&lt;/span&gt;</pre>
+<span>It is @DateTime.Now now</span>
+
+<h3>Print date with string format</h3>
+<pre>&lt;span&gt;It is @@DateTime.Now.ToString("D") now&lt;/span&gt;</pre>
+<pre>&lt;span&gt;It is @@DateTime.Now.ToString("d") now&lt;/span&gt;</pre>
+<span>It is @DateTime.Now.ToString("D") now</span>
+<br />
+<span>It is @DateTime.Now.ToString("d") now</span>
+
+<h3>Show result of method</h3>
+<pre>&lt;span&gt;1973 was a leap year = @@DateTime.IsLeapYear(1973)&lt;/span&gt;</pre>
+<span>1973 was a leap year = @DateTime.IsLeapYear(1973)</span>
+<br />
+
+<h3>Show results of C# expr</h3>
+<pre>&lt;span&gt;2 + 2 = @@(2 + 2)&lt;/span&gt;</pre>
+<span>2 + 2 = @(2 + 2)</span>
+<br />
+
+<h3>Show model data</h3>
+<pre>&lt;span&gt;Loaded guitar entity is @@Model.Brand @@Model.Model&lt;/span&gt;</pre>
+<span>Loaded guitar entity is a @Model.Brand @Model.Model</span>
+<br />
+
+<h3>HTML is encoded by default</h3>
+<pre>&lt;span&gt;Guitar Description: @@Model.Description&lt;/span&gt;</pre>
+<span>Guitar Description: @Model.Description</span>
+<br />
+
+<h3>Use Html.Raw() helper to render html</h3>
+<pre>&lt;span&gt;Guitar Description: @@Model.Description&lt;/span&gt;</pre>
+<span>Guitar Description: @Html.Raw(Model.Description)</span>
+<br />

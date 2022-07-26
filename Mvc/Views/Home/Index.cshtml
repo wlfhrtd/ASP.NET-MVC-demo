@@ -1,0 +1,44 @@
+﻿@inject Mvc.Services.HitCounter.IHitCounter HitCounter
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<hr />
+<h2>HitCounter: @HitCounter.UpdateCount()</h2>
+<hr />
+
+<div class="text-center">
+    <h1 class="display-4">ASP.NET MVC</h1>
+    <p>Razor demo</p>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <h2>Razor and ASP MVC Examples</h2>
+        <ul>
+            <li>@Html.ActionLink("Variables", "Variables")</li>
+            <li>@Html.ActionLink("Control", "Control")</li>
+            <li>@Html.ActionLink("Loops", "Loops")</li>
+            <li>@Html.ActionLink("Html Helpers", "HtmlHelper")</li>
+            <li>@Html.ActionLink("Code Blocks", "CodeBlocks")</li>
+            <li>@Html.ActionLink("Code Nuggets", "CodeNuggets")</li>
+            <li>@Html.ActionLink("Explicit Markup", "ExplicitMarkup")</li>
+            <li>@Html.ActionLink("Comments", "Comments")</li>
+            <li>@Html.ActionLink("Login form with html helpers", "StandardHtmlHelpers")</li>
+            <li>@Html.ActionLink("Login form with strongly typed html helpers", "StronglyTypedHtmlHelpers")</li>
+            <li>@Html.ActionLink("Login form with templated html helpers", "TemplatedHtmlHelpers")</li>
+            <li>@Html.ActionLink("Warnings with inline functions", "InlineFunctions")</li>
+            <li><a asp-action="Comparison">Comparison</a></li>
+            <li><a asp-action="ActionLinks">Action links</a></li>
+            <li><a asp-action="FormTagHelpers">Form tag helpers</a></li>
+            <li><a asp-action="SelectTag">Select tag</a></li>
+            <li><a asp-action="Validation">Validation</a></li>
+            <li><a asp-action="CacheSelectList">Select options cache</a></li>
+            <li><a asp-action="CustomTagHelpers">Custom tag helpers</a></li>
+            <li><a asp-action="TagCloud">Tag cloud view component</a></li>
+            <li><a asp-action="LookupList">LookupList view component</a></li>
+            <li><a asp-action="Areas">Areas</a></li>
+            <li><a asp-action="ColumnListTagHelper">ColumnListTagHelper</a></li>
+        </ul>
+    </div>
+</div>

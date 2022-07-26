@@ -1,0 +1,36 @@
+﻿@model AdvancedContact
+
+<h2>Contact form</h2>
+<hr />
+
+<form asp-action="FormTagHelpers" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" placeholder="Enter email" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" placeholder="Enter phone number" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FavoriteColor"></label> @*Text inside label tag is filled automatically with property name or [display] attr of field in entity*@
+        <input asp-for="FavoriteColor" class="form-control" placeholder="Select color" type="color" />
+    </div>
+    <div class="checkbox">
+        <label asp-for="AllowContactSpecialOffers">
+            <input asp-for="AllowContactSpecialOffers" /> Contact about offers <br /> @*have to add label text manually when <input> is wrapped inside <label>*@
+            @Html.EditorFor(m => m.AllowContactSpecialOffers) Contact about offers <br />
+
+            <select asp-for="AllowContactSpecialOffers" class="form-control">
+                <option value="">Not selected</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </label>
+    </div>
+    <input type="submit" value="Save contact info" class="btn btn-primary" />
+</form>

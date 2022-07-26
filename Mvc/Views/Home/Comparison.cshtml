@@ -1,0 +1,34 @@
+﻿@model Contact
+
+<h1>HTML Helpers and tag helpers comparison</h1>
+<h2>Action links</h2>
+
+<p>
+    Using HTML helper<br />
+    @Html.ActionLink("To homepage", "Index", "Home", null, new { @class = "h4" })
+</p>
+<br />
+<p>
+    Using Tag helper<br />
+    <a asp-controller="Home" asp-action="Index" class="h4">To homepage</a>
+</p>
+
+<h2>Creating forms</h2>
+<p>Using HTML helpers</p>
+<br />
+@using (Html.BeginForm("Index", "Home"))
+{
+    @Html.ValidationSummary()
+
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name, new { placeholder = "Enter your name", @class = "form-control" })
+
+    @Html.AntiForgeryToken()
+}
+<br />
+<p>Using Tag helpers</p>
+<form asp-action="Index" asp-controller="Home" asp-antiforgery="true">
+    @*asp-antiforgery=true is not needed actually since added automatically and true by default*@
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" placeholder="Enter your name" />
+</form>

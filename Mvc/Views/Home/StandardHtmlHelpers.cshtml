@@ -1,0 +1,26 @@
+﻿<h1>Login form with html helpers</h1>
+Standard HTML helpers usage for building forms
+
+<h2>Please log-in</h2>
+
+@using (Html.BeginForm("StandardHtmlHelpers", "Home", FormMethod.Post))@*method, controllerName_, httpmethod get/post*@
+{
+    <div class="form-group">
+        @Html.Label("exampleInputEmail", "Email address") @*<label for="example..."> 2nd arg </label>*@
+        @Html.TextBox("exampleInputEmail", "",
+         new { placeholder = "Enter email", @class = "form-control", type = "email" })
+        @*<input .. id="example.." name="example.."; 2nd empty arg is value="" *@
+    </div>
+    <div class="form-group">
+        @Html.Label("exampleInputPassword", "Password")
+        @Html.Password("exampleInputPassword", "",
+         new { placeholder = "Enter password", @class = "form-control" })
+    </div>
+    <div class="checkbox">
+        <label>
+            @Html.CheckBox("Remember me", false)
+            Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

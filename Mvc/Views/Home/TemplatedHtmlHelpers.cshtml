@@ -1,0 +1,56 @@
+﻿@model LoginViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.EmailAddress)
+        @Html.EditorFor(m => m.EmailAddress, "EmailAddress",
+         new
+              {
+                  htmlAttributes =
+             new { placeholder = "Enter email", @class = "form-control" }
+         })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.EditorFor(m => m.Password, "Password",
+         new
+              {
+                  htmlAttributes =
+             new { placeholder = "Enter password", @class = "form-control" }
+         })
+    </div>
+    <div class="checkbox">
+        <label>
+            @Html.EditorFor(m => m.RememberMe)
+            Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+@*
+    Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.DefaultEditorTemplates
+        (Html.EditorFor())
+
+        bool - checkbox or dropdown list if nullable
+        collection - appropriate template for each item
+        decimal - text box type input
+        hiddeninput - input type hidden
+        multiline - textarea
+        object - div with labels and input fields
+        password - input type password
+        string - text box
+        PhoneNumberInput - input type tel
+        UrlInput - input type url
+        EmailAddressInput - input type email
+        DateTimeInput - input type datetime
+        DateTimeLocalInput - input type datetime-local
+        DateInput - input type date
+        TimeInput - input type time
+        NumberInput - input type number
+        FileInput - input type file
+        FileCollectionInput - input type file with multiple attr
+*@
